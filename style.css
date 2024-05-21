@@ -1,0 +1,79 @@
+*{
+    /* font-family: "Roboto"; */
+    /* font-family: "Inter"; */
+    font-family: "Ubuntu Sans", sans-serif;
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-size: 20px;
+}
+:root {
+    --one-color: #0d6efd;
+    --two-color: #fb4b53;
+    --three-color: #954747;
+    --four-color: #fd7e14;
+    --five-color: #fff;
+    --six-color: #262626;
+
+}
+/* navbar group */
+.navbar {
+    /* border: 2px solid salmon; */
+    background-color: var(--two-color);
+    
+}
+.navbar div a {
+    /* border: 2px solid yellow; */
+    color: var(--five-color);
+    font-size: 22px;
+    margin:0px 20px;
+    text-transform: uppercase;
+
+}
+.coffee-shop{
+    /* border: 2px solid green; */
+    width: 44px;
+    
+}
+.coffee-shop:hover{
+    opacity: 0.5;
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 5px #b5b5b5ee;
+    background-color: var(--two-color);
+    border-radius: 12px;
+    color: var(--five-color);
+
+}
+.btn:hover{
+    background-color: #3e8e41;
+    
+}
+.btn:active{
+    background-color: #000000;
+    box-shadow: 0 2px #4d4d4d;
+    transform: translateY(3px);
+}
+
+/* header section */
+#header {
+    /* border: 2px solid yellow; */
+    min-height: 640px;
+    width: 100%;
+    position: relative;
+}
+#header video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
