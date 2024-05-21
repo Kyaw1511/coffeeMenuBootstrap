@@ -13,6 +13,7 @@
     --four-color: #fd7e14;
     --five-color: #fff;
     --six-color: #262626;
+    --seven-color : #239B56;
 
 }
 /* navbar group */
@@ -42,7 +43,7 @@
     width: 90% !important;
     height: 60% !important;
 } */
-.btn{
+.searchBtn{
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -57,7 +58,7 @@
     /* height: 30% !important; */
 
 }
-.btn:hover{
+.searchBtn:hover{
     background-color: #3e8e41;
     
 }
@@ -82,4 +83,38 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    z-index: -2;
 }
+.homePage h1, h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--five-color);
+    padding: 40px 0px 0px 0px;
+}
+.homePage p{
+    font-size: 20px;
+    color: var(--seven-color);
+    max-width: 500px;
+    text-indent: 60px;
+    text-align: justify;
+    padding: 18px;
+}
+.homePage img:first-child:hover,
+.homePage img:nth-child(2):hover,
+.homePage img:last-child:hover {
+    /* border: 2px solid green; */
+    opacity: 0.8;
+    scale: 1.8;
+    animation: shake 0.8s;
+    animation-iteration-count: infinite;
+    /* background-color: aliceblue; */
+}
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+   
