@@ -181,6 +181,7 @@
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate fugiat ad nam voluptatem officia, non beatae autem corporis possimus magni est at facilis repellendus quaerat culpa repellat?
             </p>
+            <!-- coffee beans products order link -->
             <div class="" >
                 <button 
                     class="btn btn-sm" 
@@ -225,35 +226,70 @@
                     </div>
                     <div 
                         class="offcanvas-body d-flex offcanvasBody">
-                        <div class="">
-                            <img 
-                                src="images/beans1.png" alt="beans"
-                            >
-                            <div 
-                                class="d-flex offcanvasBodyPrice">
-                                <button
-                                    class="btn btn-sm Btn">
-                                    <i class="fa-solid fa-square-plus"></i>
-                                </button>
-                                <p>9000 mmk</p>
-                                <button
-                                    class="btn btn-sm Btn">
-                                    <i class="fa-solid fa-square-minus"></i>
-                                </button>
+                        <!-- first column -->
+                        <div>
+                            <!-- first item order count -->
+                            <div class="">
+                                <img 
+                                    src="images/beans1.png" alt="beans"
+                                >
+                                <div 
+                                    class="d-flex offcanvasBodyPrice">
+                                    <button
+                                        class="btn btn-sm Btn"
+                                        onclick="myIncreaseFun()">
+                                        <i class="fa-solid fa-square-plus"></i>
+                                    </button>
+                                    <p id="num"></p>
+                                    <button
+                                        class="btn btn-sm Btn"
+                                        onclick="myDecreaseFun()">
+                                        <i class="fa-solid fa-square-minus"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <button
-                                class="btn"
-                                onclick="myIncreaseFun()">
-                                increase
-                            </button>
-                            <p id="num"></p>
-                            <img 
-                                src="images/beans2.png" alt="beans"
-                            >
-                            <img 
-                                src="images/beans3.png" alt="beans"
-                            >
+                            <!-- second item order count -->
+                            <div class="">
+                                <img 
+                                    src="images/beans2.png" alt="beans"
+                                >
+                                <div 
+                                    class="d-flex offcanvasBodyPrice">
+                                    <button
+                                        class="btn btn-sm Btn"
+                                        onclick="myIncreaseFun()">
+                                        <i class="fa-solid fa-square-plus"></i>
+                                    </button>
+                                    <p id="num"></p>
+                                    <button
+                                        class="btn btn-sm Btn"
+                                        onclick="myDecreaseFun()">
+                                        <i class="fa-solid fa-square-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- third item order count -->
+                            <div class="">
+                                <img 
+                                    src="images/beans3.png" alt="beans"
+                                >
+                                <div 
+                                    class="d-flex offcanvasBodyPrice">
+                                    <button
+                                        class="btn btn-sm Btn"
+                                        onclick="myIncreaseFun()">
+                                        <i class="fa-solid fa-square-plus"></i>
+                                    </button>
+                                    <p id="num"></p>
+                                    <button
+                                        class="btn btn-sm Btn"
+                                        onclick="myDecreaseFun()">
+                                        <i class="fa-solid fa-square-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- second column -->
                         <div class="">
                             test2
                         </div>
@@ -294,6 +330,9 @@
     let num = 0;
     function myIncreaseFun() {
         document.getElementById("num").textContent = ++num;
-        // document.getElementById("num").textContent = --num;
+        
+    }
+    function myDecreaseFun() {
+        document.getElementById("num").textContent = --num;
     }
 </script>

@@ -111,7 +111,6 @@
 .homePage .image:nth-child(2):hover,
 .homePage .image:last-child:hover {
     /* border: 2px solid green; */
-    opacity: 0.8;
     scale: 1.8;
     animation: shake 0.8s;
     animation-iteration-count: infinite;
