@@ -62,7 +62,7 @@
     background-color: #3e8e41;
     
 }
-.btn:active{
+.searchBtn:active{
     background-color: #000000;
     box-shadow: 0 2px #4d4d4d;
     transform: translateY(3px);
@@ -83,7 +83,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    z-index: -2;
+    z-index: -3;
 }
 .homePage h1, h3 {
     font-size: 50px;
@@ -92,7 +92,7 @@
     color: var(--five-color);
     padding: 40px 0px 0px 0px;
 }
-.homePage p{
+.homePage > p{
     font-size: 20px;
     color: var(--seven-color);
     max-width: 500px;
@@ -100,9 +100,16 @@
     text-align: justify;
     padding: 18px;
 }
-.homePage img:first-child:hover,
-.homePage img:nth-child(2):hover,
-.homePage img:last-child:hover {
+/* .homePage img:first-child,
+.homePage img:nth-child(2),
+.homePage img:last-child {
+    border: 2px solid yellow;
+    margin: 0px !important;
+    padding: 0px !important;
+} */
+.homePage .image:first-child:hover,
+.homePage .image:nth-child(2):hover,
+.homePage .image:last-child:hover {
     /* border: 2px solid green; */
     opacity: 0.8;
     scale: 1.8;
@@ -117,4 +124,34 @@
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
   }
-   
+
+  /*offcanvas section  */
+.offcanvasBodyPrice {
+    /* margin: 10px auto; */
+    justify-content: center;
+}
+.offcanvasBody > div:first-child{
+    min-width: 70%;
+    border: 2px solid green;
+    
+}
+.offcanvasBody > div:last-child{
+    min-width: 30%;
+    border: 2px solid green;
+}
+.offcanvasBody img {
+    display: block;
+    margin: 14px auto;
+
+}
+
+.offcanvasBodyPrice > .Btn,
+.offcanvasBodyPrice > p {
+    /* border: 2px solid green; */
+    /* color: #fd7e14; */
+    display: flex;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    
+}

@@ -182,37 +182,85 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate fugiat ad nam voluptatem officia, non beatae autem corporis possimus magni est at facilis repellendus quaerat culpa repellat?
             </p>
             <div class="" >
-                <a 
-                    href="#signInOffcanvas"
-                    data-bs-toggle="offcanvas"
-                    data-os="fade-left">
+                <button 
+                    class="btn btn-sm" 
+                    type="button" 
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <img 
-                    class="btn btn-sm"
-                    src="images/beans1.png" alt="beans"
-                    >   
-                </a>
-                <a 
-                    href="#signInOffcanvas"
-                    data-bs-toggle="offcanvas"
-                    data-os="fade-left">
+                        class="btn btn-sm image"
+                        src="images/beans1.png" alt="beans"
+                    > 
+                </button>
+                <button 
+                    class="btn btn-sm" 
+                    type="button" 
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <img 
-                    class="btn btn-sm"
-                    src="images/beans2.png" alt="beans"
-                    >   
-                </a>
-                
-                <a 
-                    href="#signInOffcanvas"
-                    data-bs-toggle="offcanvas"
-                    data-os="fade-left">
+                        class="btn btn-sm image"
+                        src="images/beans2.png" alt="beans"
+                    > 
+                </button>
+                <button 
+                    class="btn btn-sm" 
+                    type="button" 
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <img 
-                    class="btn btn-sm"
-                    src="images/beans3.png" alt="beans"
-                    >   
-                </a>
-                
+                        class="btn btn-sm image"
+                        src="images/beans3.png" alt="beans"
+                    > 
+                </button>
+                <div 
+                    class="offcanvas offcanvas-start" data-bs-scroll="true" 
+                    tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 
+                            class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Details
+                        </h5>
+                        <button 
+                            type="button" 
+                            class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                            >
+                        </button>
+                    </div>
+                    <div 
+                        class="offcanvas-body d-flex offcanvasBody">
+                        <div class="">
+                            <img 
+                                src="images/beans1.png" alt="beans"
+                            >
+                            <div 
+                                class="d-flex offcanvasBodyPrice">
+                                <button
+                                    class="btn btn-sm Btn">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                </button>
+                                <p>9000 mmk</p>
+                                <button
+                                    class="btn btn-sm Btn">
+                                    <i class="fa-solid fa-square-minus"></i>
+                                </button>
+                            </div>
+                            <button
+                                class="btn"
+                                onclick="myIncreaseFun()">
+                                increase
+                            </button>
+                            <p id="num"></p>
+                            <img 
+                                src="images/beans2.png" alt="beans"
+                            >
+                            <img 
+                                src="images/beans3.png" alt="beans"
+                            >
+                        </div>
+                        <div class="">
+                            test2
+                        </div>
+                    </div>
+                  </div>
             </div>
-            
+  
         </div>
     </header>
 
@@ -228,3 +276,24 @@
     </div> -->
 </body>
 </html>
+
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"
+></script>
+<!-- AOS link for js -->
+<script 
+    src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- INITIALIZE AOS -->
+<script>
+    AOS.init();
+</script>
+
+<!-- javascript -->
+<script>
+    let num = 0;
+    function myIncreaseFun() {
+        document.getElementById("num").textContent = ++num;
+        // document.getElementById("num").textContent = --num;
+    }
+</script>
