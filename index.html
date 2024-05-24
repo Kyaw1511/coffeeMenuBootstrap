@@ -75,6 +75,7 @@
         rel="stylesheet" 
         href="style.css"
     >
+    
 </head>
 <body>
     <!-- navbar -->
@@ -237,10 +238,10 @@
                                     class="d-flex offcanvasBodyPrice">
                                     <button
                                         class="btn btn-sm Btn"
-                                        onclick="myIncreaseFun()">
+                                        onclick="myIncreaseFun(num1)">
                                         <i class="fa-solid fa-square-plus"></i>
                                     </button>
-                                    <p id="num"></p>
+                                    <p id="num1"></p>
                                     <button
                                         class="btn btn-sm Btn"
                                         onclick="myDecreaseFun()">
@@ -257,10 +258,10 @@
                                     class="d-flex offcanvasBodyPrice">
                                     <button
                                         class="btn btn-sm Btn"
-                                        onclick="myIncreaseFun()">
+                                        onclick="myIncreaseFun(num2)">
                                         <i class="fa-solid fa-square-plus"></i>
                                     </button>
-                                    <p id="num"></p>
+                                    <p id="num2"></p>
                                     <button
                                         class="btn btn-sm Btn"
                                         onclick="myDecreaseFun()">
@@ -277,10 +278,10 @@
                                     class="d-flex offcanvasBodyPrice">
                                     <button
                                         class="btn btn-sm Btn"
-                                        onclick="myIncreaseFun()">
+                                        onclick="myIncreaseFun(num3)">
                                         <i class="fa-solid fa-square-plus"></i>
                                     </button>
-                                    <p id="num"></p>
+                                    <p id="num3"></p>
                                     <button
                                         class="btn btn-sm Btn"
                                         onclick="myDecreaseFun()">
@@ -299,8 +300,6 @@
   
         </div>
     </header>
-
-
 
     <!-- <div class="container">
         <h3>
@@ -326,13 +325,6 @@
 </script>
 
 <!-- javascript -->
-<script>
-    let num = 0;
-    function myIncreaseFun() {
-        document.getElementById("num").textContent = ++num;
-        
-    }
-    function myDecreaseFun() {
-        document.getElementById("num").textContent = --num;
-    }
+<script src="main.js">
+    
 </script>
