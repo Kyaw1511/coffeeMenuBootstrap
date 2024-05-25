@@ -1,34 +1,34 @@
-let num1 = 0;
-let num2 = 0;
-let num3 = 0;
+let orangePackage = 0;
+let bluePackage = 0;
+let greenPackage = 0;
 
-    // function myIncreaseFun()  {
-    //     document.getElementById("num1").textContent = ++num1;
-    //     document.getElementById("num2").textContent = ++num2;
-    //     document.getElementById("num3").textContent = ++num3;
-    //     console.log(num1)
-        
-    // }
-    // function myDecreaseFun() {
-    //     document.getElementById("num1").textContent = --num1;
-    //     document.getElementById("num2").textContent = --num2;
-    //     document.getElementById("num3").textContent = --num3;
-    //     console.log(num1)
-    // }
-
-    function myIncreaseFun(num1)  {
-                document.getElementById("num1").textContent = ++num1;
-                console.log(num1)
+    function incOrangePack ()  {
+        document.getElementById("orangePackage").textContent = ++orangePackage;
+        console.log(orangePackage)
             
     }
-    function myIncreaseFun(num2)  {
-        document.getElementById("num2").textContent = ++num2;
-        console.log(num2)
-        
+    function decOrangePack ()  {
+        document.getElementById("orangePackage").textContent = --orangePackage;
+        console.log(orangePackage)
+            
     }
-    function myIncreaseFun(num3)  {
-        document.getElementById("num3").textContent = ++num3;
-        console.log(num3)
-        
+    function incBluePack ()  {
+        document.getElementById("bluePackage").textContent = ++bluePackage;
+        console.log(bluePackage)
+            
     }
-    
+    function decBluePack ()  {
+        document.getElementById("bluePackage").textContent = --bluePackage;
+        console.log(bluePackage)
+            
+    }
+    function incGreenPack ()  {
+        document.getElementById("greenPackage").textContent = ++greenPackage;
+        console.log(greenPackage)
+            
+    }
+    function decGreenPack ()  {
+        document.getElementById("greenPackage").textContent = --greenPackage;
+        console.log(greenPackage)
+            
+    }

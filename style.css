@@ -130,12 +130,12 @@
     justify-content: center;
 }
 .offcanvasBody > div:first-child{
-    min-width: 70%;
+    min-width: 50%;
     border: 2px solid green;
     
 }
 .offcanvasBody > div:last-child{
-    min-width: 30%;
+    min-width: 50%;
     border: 2px solid green;
 }
 .offcanvasBody img {
