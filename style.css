@@ -131,17 +131,22 @@
 }
 .offcanvasBody > div:first-child{
     min-width: 50%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     
 }
 .offcanvasBody > div:last-child{
     min-width: 50%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .offcanvasBody img {
     display: block;
     margin: 14px auto;
 
+}
+.orange-photo, .blue-photo, .green-photo {
+    border: 2px solid seagreen;
+    min-height: 180px;
+    padding: 20px;
 }
 
 .offcanvasBodyPrice > .Btn,
@@ -152,5 +157,13 @@
     justify-content: center;
     border: none;
     text-decoration: none;
+    
+}
+.orange-items, .blue-items, .green-items {
+    border: 2px solid hotpink;
+    height: 182px;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    /* text-align: center; */
     
 }
