@@ -3,333 +3,114 @@
     start date : 18-5-2024;
  -->
 <html lang="en">
-<head>
-    <meta 
-        charset="UTF-8">
-    <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0"
-    >
-    <meta 
-        name="description" 
-        content="bootstrap"
-    >
-    <meta 
-        name="keyword" 
-        content="HTML, html, CSS, css, Javascript, JavaScript, Bootstrap, bootstrap"
-    >
-    <meta 
-        name="author" 
-        content="Kyaw Min Thein"
-    >
-    <meta 
-        http-equiv="X-UA-Compatible" 
-        content="IE-edge"
-    >
-    <title>Coffee Shop Menu</title>
-    <!-- favIcon -->
-    <link 
-        rel="shortcut icon" 
-        href="images/coffee-shop.png" 
-        type="image/x-icon"
-    >
-    <!-- link to Bootstrap cdn -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous"
-    >
-    <!-- Google font -> Roboto -->
-    <link 
-        rel="preconnect" 
-        href="https://fonts.googleapis.com">
-    <link 
-        rel="preconnect" 
-        href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
-        rel="stylesheet"
-    >
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
-        rel="stylesheet"
-    >
-    <!-- font => ubuntu san -->
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet"
-    >
+    <head>
+        <meta 
+            charset="UTF-8">
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        >
+        <meta 
+            name="description" 
+            content="bootstrap"
+        >
+        <meta 
+            name="keyword" 
+            content="HTML, html, CSS, css, Javascript, JavaScript, Bootstrap, bootstrap"
+        >
+        <meta 
+            name="author" 
+            content="Kyaw Min Thein"
+        >
+        <meta 
+            http-equiv="X-UA-Compatible" 
+            content="IE-edge"
+        >
+        <title>Coffee Shop Menu</title>
+        <!-- favIcon -->
+        <link 
+            rel="shortcut icon" 
+            href="images/coffeeIcon.svg" 
+            type="image/x-icon"
+        >
+        <!-- link to Bootstrap cdn -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+            crossorigin="anonymous"
+        >
+        <!-- Google font -> Roboto -->
+        <link 
+            rel="preconnect" 
+            href="https://fonts.googleapis.com">
+        <link 
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+            rel="stylesheet"
+        >
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
+            rel="stylesheet"
+        >
+        <!-- font => ubuntu san -->
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet"
+        >
 
-    <!-- link to fontawesome cdn -->
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
-        referrerpolicy="no-referrer"
-    >
-    <link 
-        href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet"
-    >
+        <!-- link to fontawesome cdn -->
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
+        <link 
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet"
+        >
 
-    <!-- link with CSS -->
-    <link 
-        rel="stylesheet" 
-        href="style.css"
-    >
-    
-</head>
-<body>
-    <!-- navbar -->
-    <nav 
-        class="navbar navbar-expand-lg">
-        <div 
-            class="container-fluid">
-            <a 
-                class="navbar-brand" href="#">
-                <img 
-                    src="images/coffee-shop.png" 
-                    class="coffee-shop"
-                    alt="coffee-shop"
-                >
-            </a>
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div 
-                class="collapse navbar-collapse" 
-                id="navbarSupportedContent">
-                <ul 
-                    class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li 
-                        class="nav-item">
-                        <a 
-                            class="nav-link home" 
-                            aria-current="page" 
-                            href="#">
-                            Menu
-                        </a>
-                    </li>
-                    <li 
-                        class="nav-item">
-                        <a 
-                            class="nav-link" 
-                            href="#">
-                            special
-                        </a>
-                    </li>
-                    <li 
-                        class="nav-item">
-                        <a 
-                            class="nav-link" 
-                            href="#">
-                            booking
-                        </a>
-                    </li>
-                    <li 
-                        class="nav-item">
-                        <a 
-                            class="nav-link" 
-                            href="#">
-                            delivery
-                        </a>
-                    </li>
-                    <li 
-                        class="nav-item">
-                        <a 
-                            class="nav-link" 
-                            href="#">
-                            contact
-                        </a>
-                    </li>
-                    
-                </ul>
-                <form 
-                class="d-flex" 
-                role="search">
-                    <input 
-                        class="form-control me-2" 
-                        type="search" 
-                        placeholder="Search" 
-                        aria-label="Search"
+        <!-- link with CSS -->
+        <link 
+            rel="stylesheet" 
+            href="style.css"
+        >   
+    </head>
+    <body>
+        <div class="container navbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <img 
+                        src="images/coffeeLogo.png" 
+                        class="coffeeLogo"
+                        alt="coffee-logo"
                     >
+                    <div>
+                        <p>kmt</p>
+                        
+                    </div>
                     <button 
-                        class="btn btn-sm searchBtn" 
-                        type="submit">
-                        <i 
-                            class="fa-solid fa-magnifying-glass" style="color: #f9f9f9; font-size: larger;"></i>
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNavAltMarkup" 
+                        aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                </form>
-            
-            </div>
-        </div>
-    </nav>
-    <!-- header section with commercial background video -->
-    <header id="header">
-        <video src="videos/homeBackground2.mp4" autoplay loop muted></video>
-        <div class="overlay"></div>
-        <div class="container homePage">
-            <h1 class="">
-                kmt coffee shop
-            </h1>
-            <h3 class="">
-                welcome
-            </h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate fugiat ad nam voluptatem officia, non beatae autem corporis possimus magni est at facilis repellendus quaerat culpa repellat?
-            </p>
-            <!-- coffee beans products order link offcanvas -->
-            <div class="" >
-                <button 
-                    class="btn btn-sm" 
-                    type="button" 
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    <img 
-                        class="btn btn-sm image"
-                        src="images/beans1.png" alt="beans"
-                    > 
-                </button>
-                <button 
-                    class="btn btn-sm" 
-                    type="button" 
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    <img 
-                        class="btn btn-sm image"
-                        src="images/beans2.png" alt="beans"
-                    > 
-                </button>
-                <button 
-                    class="btn btn-sm" 
-                    type="button" 
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    <img 
-                        class="btn btn-sm image"
-                        src="images/beans3.png" alt="beans"
-                    > 
-                </button>
-                <div 
-                    class="offcanvas offcanvas-start" data-bs-scroll="true" 
-                    tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 
-                            class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            Details
-                        </h5>
-                        <button 
-                            type="button" 
-                            class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
-                            >
-                        </button>
-                    </div>
-                    <div 
-                        class="offcanvas-body d-flex offcanvasBody">
-                        <!-- first column -->
-                        <div>
-                            <!-- first item order count -->
-                            <div class="orange-photo">
-                                <img 
-                                    src="images/beans1.png" alt="beans"
-                                >
-                                <div 
-                                    class="d-flex offcanvasBodyPrice">
-                                    <button
-                                        class="btn btn-sm Btn"
-                                        onclick="incOrangePack ()">
-                                        <i class="fa-solid fa-square-plus"></i>
-                                    </button>
-                                    <p id="orangePackage"></p>
-                                    <button
-                                        class="btn btn-sm Btn"
-                                        onclick="decOrangePack ()">
-                                        <i class="fa-solid fa-square-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- second item order count -->
-                            <div class="blue-photo">
-                                <img 
-                                    src="images/beans2.png" alt="beans"
-                                >
-                                <div 
-                                    class="d-flex offcanvasBodyPrice">
-                                    <button
-                                        class="btn btn-sm Btn"
-                                        onclick="incBluePack ()">
-                                        <i class="fa-solid fa-square-plus"></i>
-                                    </button>
-                                    <p id="bluePackage"></p>
-                                    <button
-                                        class="btn btn-sm Btn"
-                                        onclick="decBluePack ()">
-                                        <i class="fa-solid fa-square-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- third item order count -->
-                            <div class="green-photo">
-                                <img 
-                                    src="images/beans3.png" alt="beans"
-                                >
-                                <div 
-                                    class="d-flex offcanvasBodyPrice">
-                                    <button
-                                        class="btn btn-sm Btn"
-                                        onclick="incGreenPack ()">
-                                        <i class="fa-solid fa-square-plus"></i>
-                                    </button>
-                                    <p id="greenPackage"></p>
-                                    <button
-                                        class="btn btn-sm Btn"
-                                        onclick="decGreenPack ()">
-                                        <i class="fa-solid fa-square-minus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- second column -->
-                        <div class="">
-                            <div class="orange-items">
-                                <p id="">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                     <span id="orangePackages"></span>
-                                </p>
-                            </div>
-                            <div class="blue-items">
-                                <p id="">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                     <span id="bluePackages"></span>
-                                </p>
-                            </div>
-                            <div class="green-items">
-                                <p id="">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                     <span id="greenPackages"></span>
-                                </p>
-                            </div>
-                            <p>
-                                sub-total = <i class="fa-solid fa-dollar-sign"></i>
-                            </p>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                            
                         </div>
                     </div>
-                  </div>
-            </div>
-  
+                </div>
+            </nav>
         </div>
-    </header>
-
-    <!-- <div class="container">
-        <h3>
-            Hello
-        </h3>
-        <h4>
-            Coffee menu
-        </h4>
-    </div> -->
-</body>
+    </body>
 </html>
 
 <script 
@@ -345,6 +126,5 @@
 </script>
 
 <!-- javascript -->
-<script src="main.js">
-    
+<script src="main.js">   
 </script>

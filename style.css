@@ -7,163 +7,22 @@
     font-size: 20px;
 }
 :root {
-    --one-color: #0d6efd;
-    --two-color: #fb4b53;
-    --three-color: #954747;
-    --four-color: #fd7e14;
-    --five-color: #fff;
-    --six-color: #262626;
-    --seven-color : #239B56;
+    --one-color: #A93226;
+    --two-color: #000000;
+    --three-color: #FFFFFF;
+    --four-color: #283747;
+    --five-color: #B3B6B7;
+    --six-color: #2980B9;
+    --seven-color : #1E8449;
+    --eight-color: #FF9801;
 
 }
 /* navbar group */
-.navbar {
-    /* border: 2px solid salmon; */
-    background-color: var(--two-color);
-    
-}
-.navbar div a {
-    /* border: 2px solid yellow; */
-    color: var(--five-color);
-    font-size: 18px;
-    margin:0px 20px;
-    text-transform: uppercase;
-
-}
-.coffee-shop{
-    /* border: 2px solid green; */
-    width: 30px;
-    
-}
-.coffee-shop:hover{
-    opacity: 0.5;
-
-}
-/* .form-control {
-    width: 90% !important;
-    height: 60% !important;
-} */
-.searchBtn{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    box-shadow: 0 5px #b5b5b5ee;
-    background-color: var(--two-color);
-    border-radius: 12px;
-    color: var(--five-color);
-    /* height: 30% !important; */
-
-}
-.searchBtn:hover{
-    background-color: #3e8e41;
-    
-}
-.searchBtn:active{
-    background-color: #000000;
-    box-shadow: 0 2px #4d4d4d;
-    transform: translateY(3px);
-}
-
-/* header section */
-#header {
-    /* border: 2px solid yellow; */
-    min-height: 680px;
-    width: 100%;
-    position: relative;
-    /* margin-top: 30px; */
-}
-#header video {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -3;
-}
-.homePage h1, h3 {
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--five-color);
-    padding: 40px 0px 0px 0px;
-}
-.homePage > p{
-    font-size: 20px;
-    color: var(--seven-color);
-    max-width: 500px;
-    text-indent: 60px;
-    text-align: justify;
-    padding: 18px;
-}
-/* .homePage img:first-child,
-.homePage img:nth-child(2),
-.homePage img:last-child {
-    border: 2px solid yellow;
-    margin: 0px !important;
-    padding: 0px !important;
-} */
-.homePage .image:first-child:hover,
-.homePage .image:nth-child(2):hover,
-.homePage .image:last-child:hover {
-    /* border: 2px solid green; */
-    scale: 1.8;
-    animation: shake 0.8s;
-    animation-iteration-count: infinite;
-    /* background-color: aliceblue; */
-}
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0eg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-  }
-
-  /*offcanvas section  */
-.offcanvasBodyPrice {
-    /* margin: 10px auto; */
-    justify-content: center;
-}
-.offcanvasBody > div:first-child{
-    min-width: 50%;
-    /* border: 2px solid green; */
-    
-}
-.offcanvasBody > div:last-child{
-    min-width: 50%;
+body {
+    min-width: 100%;
+    min-height: 746px;
     /* border: 2px solid green; */
 }
-.offcanvasBody img {
-    display: block;
-    margin: 14px auto;
-
-}
-.orange-photo, .blue-photo, .green-photo {
-    border: 2px solid seagreen;
-    min-height: 180px;
-    padding: 20px;
-}
-
-.offcanvasBodyPrice > .Btn,
-.offcanvasBodyPrice > p {
-    /* border: 2px solid green; */
-    /* color: #fd7e14; */
-    display: flex;
-    justify-content: center;
-    border: none;
-    text-decoration: none;
-    
-}
-.orange-items, .blue-items, .green-items {
-    border: 2px solid hotpink;
-    height: 182px;
-    box-sizing: border-box;
-    padding: 16px 24px;
-    /* text-align: center; */
-    
+.coffeeLogo {
+    width: 40px;
 }
