@@ -42,6 +42,7 @@ body {
     /* border: 2px solid yellowgreen; */
     display: inline-block;
     align-items: center;
+    margin-right: 60px;
 }
 .coffeeShopName p{
     /* border: 2px solid seagreen; */
@@ -62,25 +63,18 @@ body {
     font-weight: bolder;
     color: var(--seven-color);
 }
-.navbarMenu li {
-    border: 2px solid green;
-    float: right;
-}
 .navbar li {
-    width: 180px;
+    width: 240px;
     height: 40px;
     padding: 0px;
     
 }
-/* .navbar li:first-child {
-    margin: 0px 0px 0px 90px;
-} */
 .navbar li a {
     border: 1px solid var(--tenth-color);
     border-radius: 12px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0px 30px 0px 0px;
+    margin: 0px 40px 0px 0px;
     letter-spacing: 1px;
     background-color: var(--ninth-color);
     color: var(--two-color); 
